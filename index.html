@@ -3,62 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warehouse App</title>
+    <title>GlobalGrad Warehousing System</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Warehouse Management System</h1>
-        <nav>
-            <ul>
-                <li><a href="#storage">Storage</a></li>
-                <li><a href="#deliveries">Deliveries</a></li>
-                <li><a href="#refilling">Refilling</a></li>
-                <li><a href="#picking">Picking</a></li>
-                <li><a href="#packing">Packing</a></li>
-                <li><a href="#batch-processing">Batch Processing</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>GlobalGrad Warehousing System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#picking">Picking</a></li>
+                    <li><a href="#packing">Packing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="storage">
-            <h2>Storage</h2>
-            <p>View and manage storage areas efficiently.</p>
+        <section id="hero">
+            <h2>Simplify Your Warehousing Operations</h2>
+            <p>A user-friendly, smartphone-compatible app for storage, deliveries, picking, packing, and more.</p>
+            <button onclick="alert('Learn More about GlobalGrad!')">Learn More</button>
         </section>
 
-        <section id="deliveries">
-            <h2>Deliveries</h2>
-            <p>Track incoming and outgoing deliveries.</p>
-        </section>
-
-        <section id="refilling">
-            <h2>Refilling</h2>
-            <p>Refill inventory based on stock levels.</p>
+        <section id="features">
+            <h2>Core Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Storage</h3>
+                    <p>Track and manage inventory effortlessly.</p>
+                </div>
+                <div class="feature">
+                    <h3>Picking</h3>
+                    <p>Barcode-guided order picking for accuracy.</p>
+                </div>
+                <div class="feature">
+                    <h3>Packing</h3>
+                    <p>Step-by-step instructions to reduce errors.</p>
+                </div>
+                <div class="feature">
+                    <h3>Batch Processing</h3>
+                    <p>Efficiently process large orders.</p>
+                </div>
+            </div>
         </section>
 
         <section id="picking">
-            <h2>Picking</h2>
-            <p>Guide users to pallets or shelves for order picking.</p>
-            <button onclick="startPicking()">Start Picking</button>
-            <p id="picking-output"></p>
+            <h2>Picking Section</h2>
+            <p>Scan barcodes to locate and pick orders with ease.</p>
+            <input type="text" id="barcodeInput" placeholder="Scan Barcode Here">
+            <button onclick="processBarcode()">Process</button>
+            <p id="pickingResult"></p>
         </section>
 
         <section id="packing">
-            <h2>Packing</h2>
-            <p>Get step-by-step packing instructions and verify items.</p>
+            <h2>Packing Section</h2>
+            <p>Follow step-by-step instructions for accurate packing.</p>
+            <button onclick="startPacking()">Start Packing</button>
+            <ul id="packingInstructions" class="hidden">
+                <li>Check the item list.</li>
+                <li>Use appropriate packing material.</li>
+                <li>Scan packed items.</li>
+                <li>Seal and label the package.</li>
+            </ul>
         </section>
 
-        <section id="batch-processing">
-            <h2>Batch Processing</h2>
-            <p>Streamline tasks with batch processing features.</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Warehouse Management App</p>
+        <p>&copy; 2024 GlobalGrad. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

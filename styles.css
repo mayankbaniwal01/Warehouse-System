@@ -1,56 +1,89 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #0078d7;
-    color: white;
-    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
+    font-weight: bold;
 }
 
-main {
-    padding: 2rem;
+#hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: #fff;
 }
 
-section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #4caf50;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#features {
+    padding: 50px;
+    background: #fff;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#picking, #packing, #contact {
+    padding: 50px;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
     text-align: center;
-    padding: 1rem 0;
-    background-color: #0078d7;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
