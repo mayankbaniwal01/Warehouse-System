@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Warehouse Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#storage">Storage</a></li>
+                <li><a href="#deliveries">Deliveries</a></li>
+                <li><a href="#refilling">Refilling</a></li>
+                <li><a href="#picking">Picking</a></li>
+                <li><a href="#packing">Packing</a></li>
+                <li><a href="#batch-processing">Batch Processing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="storage">
+            <h2>Storage</h2>
+            <p>View and manage storage areas efficiently.</p>
+        </section>
+
+        <section id="deliveries">
+            <h2>Deliveries</h2>
+            <p>Track incoming and outgoing deliveries.</p>
+        </section>
+
+        <section id="refilling">
+            <h2>Refilling</h2>
+            <p>Refill inventory based on stock levels.</p>
+        </section>
+
+        <section id="picking">
+            <h2>Picking</h2>
+            <p>Guide users to pallets or shelves for order picking.</p>
+            <button onclick="startPicking()">Start Picking</button>
+            <p id="picking-output"></p>
+        </section>
+
+        <section id="packing">
+            <h2>Packing</h2>
+            <p>Get step-by-step packing instructions and verify items.</p>
+        </section>
+
+        <section id="batch-processing">
+            <h2>Batch Processing</h2>
+            <p>Streamline tasks with batch processing features.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Warehouse Management App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
